@@ -170,6 +170,9 @@ Thus, the program was implemented and executed successfully, and the required ou
   Stop
 # Program:
 # Output:
+[exp 3 cprogramming.pdf](https://github.com/user-attachments/files/23729187/exp.3.cprogramming.pdf)
+
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
