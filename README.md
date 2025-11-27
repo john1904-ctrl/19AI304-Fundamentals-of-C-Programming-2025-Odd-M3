@@ -1,178 +1,278 @@
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M3
-# IAPR-3- Module 3 - FoC
-## 5. Implementation of one-dimensional array and multidimensional array.
-## 6. Implementation of string manipulation.
-# Ex.No:11
-  Formulate a C program to convert a given decimal number into its binary equivalent and display it.
-# Date : 
-# Aim:
-To formulate a C program to convert a decimal number into its binary equivalent and display it.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Declare variables: num (input number), rem (remainder), binary[] (array to store binary digits), and loop counters i and k.
-### Step 4: 
-  Read the decimal number from the user.
-### Step 5: 
-  Initialize i = 0.
-### Step 6: 
-  Repeat while num > 0:
-  Divide num by 2 and store the remainder in binary[i].
-  Increment i.
-  Update num = num / 2.
-### Step 7: 
-  Display the binary digits in reverse order (from i-1 down to 0).
-### Step 8: 
-   Stop
-# Program:
-# Output:
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+# EX-11-EMI-CALCULATOR
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] % 2 == 0) {
+            printf("E ");
+        } else {
+            printf("%d ", a[i]);
+        }
+    }
+
+    return 0;
+}
 
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M3
-# IAPR-3- Module 3 - FoC
-# Ex.No:12
-  Develop a C program to read a matrix and find its saddle point. A saddle point is an element that is the minimum in its row and also the maximum in its column. If such an element exists, display its position and value.
-# Date : 
-# Aim:
-  To develop a C program that inputs a matrix, checks each row for its minimum element, verifies whether that element is also the maximum in its corresponding column, and displays the saddle point and its position if it exists.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
- Declare variables i, j, k, m, min, max and a position array pos[2][2].
-### Step 4: 
- Read the order of the square matrix m.
-### Step 5: 
- Declare an m × m matrix and read its elements.
-### Step 6: 
- Display the matrix.
-### Step 7: 
-   For each row `i` from `0` to `m−1`:
-- **Step 7.1:** Set `min` as the first element of the row.  
-- **Step 7.2:** Scan the row to find its minimum element and store its position in `pos[0]`.  
-- **Step 7.3:** Let `j` be the column of this minimum element.  
-- **Step 7.4:** Set `max` as the first element of column `j`.  
-- **Step 7.5:** Scan column `j` to find its maximum element and store its position in `pos[1]`.  
-### Step 8: 
-  Check if the row minimum equals the column maximum:
-- If `min == max` **and their positions match**, then the element is a **saddle point**.
-- Print the saddle point value and its position.
-### Step 9: 
-  Stop
-# Program:
-# Output:
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+```
 
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M3
-# IAPR-3- Module 3 - FoC
-# Ex.No:13
-  Formulate a C program to reverse a string entered by the user and display the reversed string.
-# Date : 
-# Aim:
-  To formulate a C program that reads a string from the user, reverses it, and prints the reversed string.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Declare two character arrays: `s` to store the input string and `d` to store the reversed string.
-### Step 4: 
-  Read the string from the user using `scanf("%[^\n]s", s);`
-### Step 5: 
-  Find the length of the string `s` by traversing it until the null character `'\0'` is encountered.
-### Step 6: 
-  Initialize a counter `j` for the reversed string.
-### Step 7: 
-  Copy characters from the end of `s` to the beginning of `d` using a loop until all characters are copied in reverse order.
-### Step 8: 
-  Terminate the reversed string `d` with the null character `'\0'`.
-### Step 9: 
-  Print the reversed string.
-### Step 10: 
-  Stop
-# Program:
-# Output:
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
-
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M3
-# IAPR-3- Module 3 - FoC
-# Ex.No:14
-  Formulate a C program to count the frequency of each character in a given string and display the count of every character.
-# Date : 
-# Aim:
-  To formulate a C program that accepts a string from the user and calculates the frequency of each character in the string.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Declare a character array `s[100]` to store the input string, an integer array `visited[256]` initialized to `0`, and variables `i`, `n`, and `count`.
-### Step 4: 
-  Read the string from the user using `scanf("%[^\n]", s);`
-### Step 5: 
-  Calculate the length of the string using `strlen(s)` and store it in `n`.
-### Step 6: 
- For each character `s[i]` in the string (from `i = 0` to `n - 1`):
- - If `visited[(unsigned char)s[i]] == 0` (character not yet counted):  
-  - Initialize `count = 0`.  
-  - Loop through the string again and increment `count` for every occurrence of `s[i]`.  
-  - Print `s[i]` and its count.  
-  - Set `visited[(unsigned char)s[i]] = 1` to mark it as counted.
-### Step 7: 
-  Repeat Step 6 for all characters.
-### Step 8:
-  Stop
-# Program:
-# Output:
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
 
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M3
-# IAPR-3- Module 3 - FoC
-# Ex.No:15
-  Formulate a C program to remove duplicate words from a given string and display the string with only unique words.
-# Date : 
-# Aim:
-  To formulate a C program to remove duplicate words from a given string and display the string with only unique words.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Declare a character array `str` to store the input string and a 2D array `words` to store individual words.
-### Step 4: 
-  Read the input string using `scanf("%[^\n]s", str);`
-### Step 5: 
- Split the string into words:
- - Traverse the string character by character.  
- - When a space is encountered, terminate the current word with `'\0'` and move to the next row in `words`.  
- - Otherwise, copy the character into the current word.
-### Step 6: 
-  Compare each word with all other words to detect duplicates:
-  - If a duplicate is found, mark it by setting the first character to `'\0'`.
-### Step 7: 
-  Print all words that are not marked as duplicates.
-### Step 8: 
-  Stop
-# Program:
-# Output:
-[exp 3 cprogramming.pdf](https://github.com/user-attachments/files/23729187/exp.3.cprogramming.pdf)
 
 
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+## Output:
+
+
+
+
+
+ 
+![443503424-18cc5672-baa4-4d89-9a8e-080097a1d425](https://github.com/user-attachments/assets/970b68d3-1c62-482c-9a39-72b6f23cfe2f)
+
+
+
+
+
+
+
+## Result:
+
+
+
+
+Thus, the program to replace all even elements with 'E' in one dimensional array was verified successfully.
+
+
+
+
+
+
+
+
+# EX-12-FIBONACCI-SERIES
+## AIM
+To write a C program to generate the Fibonacci series for the value 6.
+
+## ALGORITHM
+1.	Start the program.
+2.	Read number of terms to display.
+3.	Add the previous two terms and store it in new term.
+4.	Assign 2nd term to 1st term and 3rd term to 2nd term.
+5.	Repeat steps 3 and 4 n number of times.
+6.	Display the result.
+7.	Stop the program.
+
+## PROGRAM
+
+```
+#include <stdio.h>
+int main()
+{
+    int n,a=0,b=1;
+    scanf("%d",&n);
+    int i=1;
+    do
+    {
+        printf("%d ",a);
+        int c=a+b;
+        a=b;
+        b=c;
+        i++;
+    }while(i<=n);
+    return 0;
+}
+
+```
+## OUTPUT
+
+
+![443501183-b728c38c-a32c-4ab6-9de4-36c66f19f933](https://github.com/user-attachments/assets/c8c25b68-53b3-4ba3-99f3-f198dd06ccb6)
+
+
+
+
+
+
+## RESULT
+Thus the program to generate the Fibonacci series for the value 6 has been executed successfully.
+ 
+# EX-13-ONE-DIMENSIONAL-ARRAY
+## AIM
+To write a C program to read n elements as input and print the last element of the array.
+
+## ALGORITHM
+1.	Start the program.
+2.	Read a variable.
+3.	Read the array values n number of times.
+4.	Print the last element.
+5.	Stop the program.
+
+## PROGRAM
+
+```
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("%d",a[n-1]);
+    return 0;
+}
+
+```
+## OUTPUT
+
+
+
+
+
+![443502117-7492e5ec-1d72-46fb-b370-8469e4824c62](https://github.com/user-attachments/assets/d74e7081-a0bc-40d6-ba98-f2a77fe0483c)
+
+
+
+
+## RESULT
+Thus the program to read n elements as input and print the last element of the array has been executed successfully.
+
+
+
+# EX-14-POSITIVE-ARRAY-ELEMENTS
+## AIM
+To write a C Program to count total number of positive elements in an array.
+
+## ALGORITHM
+1.	Start the program.
+2.	Read a variable.
+3.	Read the array values n number of times.
+4.	If the array value can be divided by 2 then increment count by 1.
+5.	Display result.
+6.	Stop the program.
+
+## PROGRAM
+
+```
+#include <stdio.h>
+int main()
+{
+    int n,c=0;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(int j=0;j<n;j++)
+    {
+        if(a[j]>0)
+        {
+            c++;
+        }
+    }
+    printf("count  of positive numbers  in array: %d",c);
+    return 0;
+}
+
+```
+
+## OUTPUT
+
+![443502861-f895162b-98ec-4228-8956-34b24fcc2bf6](https://github.com/user-attachments/assets/358b45e9-3fb7-4845-9480-22e35647e2a5)
+
+
+
+
+## RESULT
+Thus the program to count total number of positive elements in an array has been executed successfully.
+
+
+
+# EX -15 - Replace All Even Elements With 'E' In One Dimensional Array
+
+## Aim:
+To write a C program to replace all even elements with 'E' in one dimensional array
+
+## Algorithm:
+1.	Input the array:
+  Read the size of the array.
+  Input the elements of the array.
+2.	Iterate through the array:
+ 	For each element of the array, check if the element is even (i.e., if the element modulo 2 equals 0).
+3.	Replace even elements with 'E':
+     If an element is even, replace that element with the character 'E'.
+4.	Output the updated array:
+ Print the updated array after replacements.
+
+## Program:
+
+
+
+
+```
+#include <stdio.h>
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int a[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        if (a[i] % 2 == 0) {
+            printf("E ");
+        } else {
+            printf("%d ", a[i]);
+        }
+    }
+
+    return 0;
+}
+
+
+```
+
+
+
+
+
+
+## Output:
+
+
+
+
+
+ 
+![443503424-18cc5672-baa4-4d89-9a8e-080097a1d425](https://github.com/user-attachments/assets/970b68d3-1c62-482c-9a39-72b6f23cfe2f)
+
+
+
+
+
+
+
+## Result:
+
+
+
+
+Thus, the program to replace all even elements with 'E' in one dimensional array was verified successfully.
+
+
+
+
+
+
+
+
 
